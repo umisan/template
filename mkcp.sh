@@ -4,13 +4,15 @@ if [ $# -eq 0 ]; then
     exit 0
 fi
 
-mkdir $1
-cp ./template/template.cpp ./$1/a.cpp
-cp ./template/template.cpp ./$1/b.cpp
-cp ./template/template.cpp ./$1/c.cpp
-cp ./template/template.cpp ./$1/d.cpp
-cp ./template/template.cpp ./$1/e.cpp
-cp ./template/template.cpp ./$1/f.cpp
+dir=`pwd`/$1
+origin="/home/umisan/c++/template"
+mkdir $dir
+cp $origin/template.cpp $dir/a.cpp
+cp $origin/template.cpp $dir/b.cpp
+cp $origin/template.cpp $dir/c.cpp
+cp $origin/template.cpp $dir/d.cpp
+cp $origin/template.cpp $dir/e.cpp
+cp $origin/template.cpp $dir/f.cpp
 
-cd ./$1
+cd $dir
 git init
