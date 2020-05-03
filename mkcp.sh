@@ -13,6 +13,9 @@ cp $origin/template.cpp $dir/c.cpp
 cp $origin/template.cpp $dir/d.cpp
 cp $origin/template.cpp $dir/e.cpp
 cp $origin/template.cpp $dir/f.cpp
+cp $origin/Makefile $dir/Makefile
 
 cd $dir
 git init
+
+make
